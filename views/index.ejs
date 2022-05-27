@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Express.js image uploading using multer</h1>
+    <span><%= typeof msg !='undefined'? msg:'' %></span>
+    <form method="POST"action="/upload" enctype="multipart/form-data">
+
+        <input type="file" name="myfile" value="check"><br><br>
+        <input type="submit" value="Image UploaD">
+
+
+    </form>
+    <img src="<%= typeof file !='undefined'? file:'' %>" style="height:300px;">
+
+</body>
+</html>
